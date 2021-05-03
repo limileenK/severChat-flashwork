@@ -39,7 +39,7 @@ io.on("connection", socket => {
   });
 })
 
-http.listen(
+server.listen(
   PORT,
   () => {
     console.log(`Listening to port ${PORT}`);

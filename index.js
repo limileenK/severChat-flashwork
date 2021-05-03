@@ -42,7 +42,7 @@ io.on("connection", socket => {
 server.listen(
   PORT,
   () => {
-    console.log(`Listening to port ${PORT}`);
+    console.log(`Listening to port` +PORT);
   }
 );
 

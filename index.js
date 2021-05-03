@@ -6,10 +6,10 @@ const mysql = require("mysql");
 var moment = require('moment-timezone');
 const { disconnect } = require('process');
 const connection = mysql.createConnection({
-  "host": "localhost",
-  "user": "root",
-  "password": "",
-  "database": "flashwork"
+  "host": "us-cdbr-east-03.cleardb.com",
+  "user": "bd73615bdd11fb",
+  "password": "a3b52843",
+  "database": "heroku_07c0dcb74d7fa85"
 });
 
 // connect

@@ -5,7 +5,7 @@ const { timeStamp } = require('console');
 const mysql = require("mysql");
 var moment = require('moment-timezone');
 const { disconnect } = require('process');
-const PORT = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 const connection = mysql.createConnection({
   "host": "us-cdbr-east-03.cleardb.com",
   "user": "bd73615bdd11fb",
@@ -40,9 +40,9 @@ io.on("connection", socket => {
 })
 
 server.listen(
-  PORT,
+  port,
   () => {
-    console.log(`Listening to port` +PORT);
+    console.log("Listening to port" + port);
   }
 );
 

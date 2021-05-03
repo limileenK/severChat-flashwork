@@ -38,6 +38,10 @@ io.on("connection", socket => {
   });
 })
 
-http.listen(4000, function () {
-  console.log('listening on port 4000')
-})
+app.listen(
+  PORT,
+  () => {
+    console.log(`Listening to port ${PORT}`);
+  }
+);
+
